@@ -1,3 +1,6 @@
+import os
+
+
 def remove_file(file_path):
     """
     Removes file
@@ -27,9 +30,8 @@ def make_directory(directory):
     :param directory:
     :type directory: string
     """
-    print("hello")
-    # if not os.path.exists(directory):
-    #     os.makedirs(directory)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
 
 
 def is_file_accepted(accepted_files, filename):
