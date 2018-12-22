@@ -1,0 +1,5 @@
+# Libraries for development
+pre-commit==1.13.0
+
+# Libraries for program
+click==7.0
