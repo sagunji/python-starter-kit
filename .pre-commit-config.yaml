@@ -1,5 +1,6 @@
-- repo: https://github.com/sagunji/python-starter-kit.git
-  sha: dev
+repos:
+- repo: git://github.com/pre-commit/pre-commit-hooks
+  rev: v2.0.0
   hooks:
     - id: check-case-conflict
     - id: check-docstring-first
