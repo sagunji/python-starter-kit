@@ -25,5 +25,12 @@ setup(
     install_requires=REQUIRES,
     packages=find_packages(),
     include_package_data=True,
-    entry_points={"console_scripts": ["mylibrary = mylibrary.cli:main"]},
+    entry_points={
+        "console_scripts": [
+            "mylibrary = mylibrary.cli:main",
+            "check-case-conflict = pre_commit_hooks.check_case_conflict:main",
+            "check-docstring-first = pre_commit_hooks.check_docstring_first:main",
+            "check-yaml = pre_commit_hooks.check_yaml:check_yaml",
+        ]
+    },
 )
