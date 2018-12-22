@@ -1,5 +1,4 @@
 - repo: https://github.com/sagunji/python-starter-kit.git
-  rev: v1.0.0  # Use the ref you want to point at
   hooks:
     - id: check-case-conflict
     - id: check-docstring-first
