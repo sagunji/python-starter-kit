@@ -10,6 +10,6 @@ logs/*
 .pytest_cache
 _build
 *.pyc
-msdf.egg-info
+python_starter_kit.egg-info
 .coverage
 script.py
