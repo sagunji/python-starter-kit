@@ -44,7 +44,7 @@ How to run
 
 4. Initial venv
 
-   ``python3 -m pip install --user virtualenv``
+   ``python3 -m virtualenv venv``
 5. Activate venv
    
    ``source venv/bin/activate``
