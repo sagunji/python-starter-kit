@@ -32,18 +32,3 @@ def make_directory(directory):
     """
     if not os.path.exists(directory):
         os.makedirs(directory)
-
-
-def is_file_accepted(accepted_files, filename):
-    """
-    Checks if file is acceptable or not
-
-    :param accepted_files:
-    :type accepted_files: list of files accepted
-    :param filename: name of the file to be checked
-    :type filename: string
-    :return: True if file is accepted else false
-    :rtype: boolean
-    """
-    ext = filename.split(".").pop()
-    return ext in accepted_files
