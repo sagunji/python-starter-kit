@@ -1,0 +1,15 @@
+__pycache__
+venv
+.idea
+.ropeproject
+.vscode
+*.log
+logs/*
+
+.env
+.pytest_cache
+_build
+*.pyc
+msdf.egg-info
+.coverage
+script.py
