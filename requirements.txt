@@ -4,3 +4,4 @@ pre-commit-hooks==2.0.0
 
 # Libraries for program
 click==7.0
+python-dotenv==0.10.1
