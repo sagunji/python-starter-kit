@@ -3,7 +3,7 @@ import datetime
 
 import settings
 from enum import Enum
-from utils.folder_actions import make_directory
+from folder_actions import make_directory
 
 
 log_level = {
