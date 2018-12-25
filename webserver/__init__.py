@@ -1,16 +1,20 @@
-from __future__ import absolute_import
-from flask import Flask, jsonify, request
+import os
+from flask import Flask
+
+from app import api_bp
+import settings
 
 
 def create_app():
-    """Returns a flask app"""
+    app = Flask(__name__)
+    app.config.from_object(settings.APP_SETTINGS)
 
-    app = Flask(__name__, static_folder="static")
+    app.register_blueprint(api_bp, url_prefix="/api")
+
     return app
 
 
-app = create_app()
-app.config["PROPAGATE_EXCEPTIONS"] = True
-
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=5000, threaded=True)
+    app = create_app()
+    app.run(debug=True)
+

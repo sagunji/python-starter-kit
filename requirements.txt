@@ -5,4 +5,5 @@ pre-commit-hooks==2.0.0
 # Libraries for program
 click==7.0
 flask==1.0.2
+flask_restful==0.3.7
 python-dotenv==0.10.1
