@@ -1,7 +1,7 @@
 from flask_restful import Resource
 
 
-class Hello(Resource):
+class Sample(Resource):
     def get(self):
         return {"message": "Hello, World! From get."}
 
