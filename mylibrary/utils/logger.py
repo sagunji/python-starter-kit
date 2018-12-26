@@ -1,9 +1,9 @@
+import os
 import logging
 import datetime
 
 import settings
 from enum import Enum
-from folder_actions import make_directory
 
 
 log_level = {
@@ -31,7 +31,8 @@ class Logger:
         """ Create log folders
         """
         for log in Log:
-            make_directory(log.value["path"])
+            if not os.path.exists(log.value["path"]):
+                os.makedirs(log.value["path"])
 
     @staticmethod
     def _configure_logger(filename, folder_path="./logs"):
