@@ -1,10 +1,11 @@
 # coding: utf-8
 
+import re
+from os import path
+from __version__ import __version__
 from setuptools import setup, find_packages
 
-
 NAME = "python-starter-kit"
-VERSION = "1.0.0"
 MODULES = ["mylibrary"]
 # To install the library, run the following
 #
@@ -17,7 +18,7 @@ REQUIRES = open("requirements.txt").readlines()
 
 setup(
     name=NAME,
-    version=VERSION,
+    version=__version__,
     description="Simple kit to get you starter with python",
     author_email="karanjit.sagun01@gmail.com",
     url="https://github.com/sagunji/python-starter-kit.git",
